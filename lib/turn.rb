@@ -5,3 +5,12 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
+def input_to_index(input)
+  return input.to_i - 1
+end
+
+def move(board, input, character = "X")
+  board[input] = character
+  return board
+end
